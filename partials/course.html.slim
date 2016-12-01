@@ -2,7 +2,9 @@
   .border-black.p-1
     h2.mt-0
       = "Course #{iteration}"
-      small.ml-1 = "€ #{rand(13..99)}.99"
+      small.ml-1
+        | &euro;
+        =< "#{rand(13..99)}.99"
 
     p Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo.
       Etiam porta sem malesuada magna mollis euismod.
