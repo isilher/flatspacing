@@ -6,4 +6,11 @@ head
   = javascript_tag :main
 
 body
-  == yield
+  header.bg-white
+    .container
+      h1
+        = 'Flatspacing'
+        small an experiment to add spacing utility classes a la Bootstrap 4 to a Bootstrap 3 project.
+
+  .container
+    == yield

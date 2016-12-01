@@ -1,3 +1,27 @@
-h1 Flatspacing
+- @categories = ['cats', 'hats', 'tricks', 'loops', 'tosti\'s', 'plants', 'cars', 'lego', 'macaroni', 'lamps', 'apples']
 
-p an experiment to add spacing utility classes a la Bootstrap 4 to a Bootstrap 3 project.
+.row
+  .col-sm-3
+    .bg-white.border-black
+      label match this
+      input.form-control type='text' name='match'
+
+      label with category
+      - @categories.each do |category|
+        .checkbox
+          label
+            input type='checkbox'
+            = category
+
+      label in pricerange
+      br
+      | TODO: slider here
+
+  .col-sm-9
+    .bg-white.border-black
+      .row
+        - 12.times do |i|
+          == render 'course', iteration: i
+
+.bg-white
+  | Footer

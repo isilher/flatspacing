@@ -1,0 +1,11 @@
+.col-md-4.col-sm-6
+  .border-black
+    h2
+      = "Course #{iteration}"
+      small = "€ #{rand(13..99)}.99"
+
+    p Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo.
+      Etiam porta sem malesuada magna mollis euismod.
+
+    - rand(1..3).times do
+      span.border-black = @categories.sample
