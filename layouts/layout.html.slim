@@ -6,11 +6,11 @@ head
   = javascript_tag :main
 
 body
-  header.bg-white
-    .container
-      h1
+  header.bg-white.mb-3
+    .container.py-2
+      h1.m-0
         = 'Flatspacing'
-        small an experiment to add spacing utility classes a la Bootstrap 4 to a Bootstrap 3 project.
+        small.ml-3.hidden-xs an experiment to add spacing utility classes a la Bootstrap 4 to a Bootstrap 3 project.
 
   .container
     == yield

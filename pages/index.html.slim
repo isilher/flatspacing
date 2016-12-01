@@ -1,27 +1,30 @@
 - @categories = ['cats', 'hats', 'tricks', 'loops', 'tosti\'s', 'plants', 'cars', 'lego', 'macaroni', 'lamps', 'apples']
 
 .row
-  .col-sm-3
-    .bg-white.border-black
+  .col-md-3.col-sm-4.mb-3
+    .bg-white.border-black.py-3.px-2
+      h2.mt-0.mb-2 Filters
       label match this
-      input.form-control type='text' name='match'
+      input.form-control.mb-2 type='text' name='match'
 
-      label with category
-      - @categories.each do |category|
-        .checkbox
-          label
-            input type='checkbox'
-            = category
+      .mb-2
+        label with category
+        - @categories.each do |category|
+          .checkbox
+            label
+              input type='checkbox'
+              = category
 
       label in pricerange
       br
       | TODO: slider here
 
-  .col-sm-9
-    .bg-white.border-black
+  .col-md-9.col-sm-8.mb-3
+    .bg-white.border-black.p-3
+      h2.mt-0.mb-3 Courses
       .row
         - 12.times do |i|
           == render 'course', iteration: i
 
-.bg-white
-  | Footer
+.bg-white.py-2.px-3.text-right
+  strong ... and attempt a frontend assignment at the same time.
