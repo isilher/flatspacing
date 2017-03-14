@@ -5,4 +5,4 @@ Now Bootstrap 4 introduces some really nice [*spacing utility classes*](https://
 
 > We still have a lot of work to do, but we’re closing the gap and getting more stable with each release. Keep reading for the highlights and plans for Alpha 6.
 
-I’m no fan of using alpha versions in production, so my quest for today is this: Find a way to add these (or similar) utility classes to Bootstrap 3 projects. I’m going to bring this to practice by attempting our front-end assignment for new candidates.
+I’m no fan of using alpha versions in production, so my quest for today is this: Find a way to add these (or similar) utility classes to Bootstrap 3 projects. I’m going to bring this to practice by attempting a simple front-end assignment.
